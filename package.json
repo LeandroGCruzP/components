@@ -9,11 +9,13 @@
   },
   "dependencies": {
     "next": "12.0.7",
+    "node-sass": "5.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@types/node": "17.0.2",
+    "@types/node-sass": "^4.11.2",
     "@types/react": "17.0.37",
     "eslint": "8.5.0",
     "eslint-config-next": "12.0.7",

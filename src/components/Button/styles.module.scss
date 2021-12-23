@@ -1,0 +1,29 @@
+.container {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3.125rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #02a7a3;
+    color: #fff;
+
+    padding: 0 2rem;
+    border: 0;
+
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &.outline {
+      background: transparent;
+      color: #02a7a3;
+      border: 1px solid #02a7a3;
+    }
+  }
+}
