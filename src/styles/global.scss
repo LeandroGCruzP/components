@@ -4,83 +4,106 @@
   box-sizing: border-box;
 }
 
-:root {
-  --background: #fceff9;
-  --separator: #a8a8b3;
-  --text: #303031;
-  --text-title: #000;
-
-  --blue-100: #abfdfb;
-  --blue-200: #57fcf8;
-  --blue-300: #03fbf5;
-  --blue-400: #02a7a3;
-  --blue-500: #015351;
-
-  --pink-100: #edbbd8;
-  --pink-200: #db78b2;
-  --pink-300: #ca348c;
-  --pink-400: #86235d;
-  --pink-500: #43112e;
-
-  --green: #62d346;
-  --red: #ff4c4c;
-}
-
-body,
-input,
-textarea,
-button,
-fieldset,
-span {
-  font: 400 1rem 'Roboto', sans-serif;
-  color: var(--black);
-  border: none;
-}
-
 h1,
 h2,
 h3,
-h4,
+span,
 h5,
-h6 {
-  font-weight: 900;
+button,
+a {
   font-family: Roboto, sans-serif;
-  color: var(--black);
+  font-weight: 500;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+
+h3,
+a {
+  font-size: 1.0625rem;
+  line-height: 1.5625rem;
+}
+
+span,
+button {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
 
 button {
   cursor: pointer;
 }
 
-li {
-  list-style-type: none;
-}
-
 a {
-  color: var(--black);
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
   text-decoration: none;
-  line-height: 1.4rem;
-  font-size: 1rem;
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%; // 15px
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  h3,
+  a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  span,
+  button {
+    font-size: 0.9375rem;
+    line-height: 1.4375rem;
+  }
+
+  h5 {
+    font-size: 0.8125rem;
+    line-height: 1.3125rem;
   }
 }
 
-@media (max-width: 720px) {
-  html {
-    font-size: 87.5%; // 14px
+@media (max-width: 426px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.625rem;
+    line-height: 2.125rem;
+  }
+
+  h3,
+  a {
+    font-size: 0.9375rem;
+    line-height: 1.4375rem;
+  }
+
+  span,
+  button {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+
+  h5 {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
   }
 }
