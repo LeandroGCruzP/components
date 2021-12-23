@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 330px;
+  width: 20.625rem;
 
   padding: 2rem;
 
-  border-radius: 30px;
+  border-radius: 9px;
   border: 1px solid #d3d3cd;
   background: transparent;
 
@@ -18,9 +18,8 @@
     padding: 0 0 1rem 0;
     border-bottom: 1px solid #d3d3cd;
 
-    span {
+    h2 {
       color: #d3d3cd;
-      font-size: 1.5rem;
       font-weight: 600;
     }
   }
@@ -33,7 +32,6 @@
 
     span {
       color: #d3d3cd;
-      line-height: 1.9rem;
     }
   }
 

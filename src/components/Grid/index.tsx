@@ -17,7 +17,7 @@ export function Grid({
   return (
     <div className={styles.container}>
       <header>
-        <span>{title}</span>
+        <h2>{title}</h2>
       </header>
 
       <main>
