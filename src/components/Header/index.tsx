@@ -17,8 +17,8 @@ export function Header() {
       </div>
 
       <div className={styles.linksAction}>
-        <Link href="#">Bikes</Link>
-        <Link href="#">Delivery</Link>
+        <Link href="#">Clothes</Link>
+        <Link href="#">About us</Link>
         <Link href="#">Contact</Link>
         <button>
           <CartIcon />

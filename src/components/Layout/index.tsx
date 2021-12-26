@@ -4,6 +4,8 @@ import { Button } from '../Button'
 import { Header } from '../Header'
 import PantsImg from '../../../public/pants.svg'
 import TshirtImg from '../../../public/tshirt.svg'
+import PantsIcon from '../../../public/pantsIcon.svg'
+import TshirtIcon from '../../../public/tshirtIcon.svg'
 import MaleIcon from '../../../public/male.svg'
 import FemaleIcon from '../../../public/female.svg'
 import styles from './styles.module.scss'
@@ -24,9 +26,11 @@ export function Layout() {
         <div className={styles.main}>
           <div className={styles.left}>
             <div className={styles.headerMain}>
-              <h2>Leh Cruz</h2>
+              <h2>LC</h2>
               <div className={styles.links}>
-                <Link href="#">Overview</Link>
+                <Link href="#">
+                  <a className={styles.active}>Overview</a>
+                </Link>
                 <Link href="#">Specs</Link>
               </div>
             </div>
@@ -60,7 +64,45 @@ export function Layout() {
           </div>
 
           <div className={styles.right}>
-            <h1>Agregar ao Carrinho</h1>
+            <h2>Select your preference</h2>
+            <div className={styles.buttonSection}>
+              <button className={styles.active}>
+                <TshirtIcon />
+              </button>
+              <button>
+                <PantsIcon />
+              </button>
+            </div>
+            <h3>Tshirt</h3>
+            <div className={styles.buttonSelect}>
+              <div className={styles.select}>
+                <button className={styles.active}>
+                  <TshirtImg />
+                </button>
+                <h5>Default</h5>
+              </div>
+
+              <div className={styles.select}>
+                <button>
+                  <TshirtImg />
+                </button>
+                <h5>Nike</h5>
+              </div>
+
+              <div className={styles.select}>
+                <button>
+                  <TshirtImg />
+                </button>
+                <h5>Jordan</h5>
+              </div>
+
+              <div className={styles.select}>
+                <button>
+                  <TshirtImg />
+                </button>
+                <h5>Puma</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
